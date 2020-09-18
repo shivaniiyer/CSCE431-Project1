@@ -1,0 +1,43 @@
+<%= link_to("<< Back to Table", books_path, :class => 'back-link') %>
+
+<div>
+  <h2>Book Details</h2>
+
+  
+
+  <table>
+    <tr>
+      <th>Title</th>
+      <td><%= @book.title %></td>
+    </tr>
+    <tr>
+      <th>Author</th>
+      <td><%= @book.author %></td>
+    </tr>
+    <tr>
+      <th>Genre</th>
+      <div class="dropdown">
+         <button class="dropbtn">Genre</button>
+         <div class="dropdown-content">
+          <a href="#">Genre</a>
+        </div>
+      </div>
+      <td><%= @book.genre%></td>
+    </tr>
+    <tr>
+      <th>Price</th>
+      <td><%= @book.price %></td>
+    </tr>
+    <tr>
+      <th>Published Date</th>
+      <div class="dropdown">
+         <button class="dropbtn">Published Date</button>
+         <div class="dropdown-content">
+          <a href="#">Published Date</a>
+        </div>
+      </div>
+      <td><%= @book.published_dates%></td>
+    </tr>
+  </table>
+
+</div>

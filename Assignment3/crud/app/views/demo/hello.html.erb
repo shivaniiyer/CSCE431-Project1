@@ -1,0 +1,21 @@
+<h1>Hello World from Hello!</h1>
+
+<%1 + 1 %> <br />
+
+<%target = "world" %>
+<%= "Hello #{target}" %>
+
+<br />
+
+<% @arrat.each do |n| %>
+	<% =n %>
+<% end %>
+
+<br />
+
+<%link_to('Index page', {:action => 'hello' }) %> <br />
+
+ID: <%= @id %><br />
+ID: <%= params[:id] %><br />
+Page: <%= @page %><br />
+Next page: <% @page + 1 %><br />
